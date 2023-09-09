@@ -1,8 +1,8 @@
-
+/*GENERAL ABOUT THE PAGE*/
 :root {
     --black: #1B1B32;
     --white: #F5F6F7;
-    --transition: 100ms ease-in-out;
+    --transition: 200ms ease-in-out;
 }
 
 *, *::before, *::after {
@@ -11,14 +11,10 @@
 
 html {
     font-size: 19px;
-    font-family: Verdana, Tahoma, sans-serif;
+	font-family: 'Poppins', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    * {
-      scroll-behavior: smooth;
-    }
-  }
+/*HEADER*/
 
 nav {
 	display: flex;
@@ -49,9 +45,11 @@ a {
 
 header nav a:hover:not(.logo) {
     cursor: pointer;
-    border-bottom: 3px solid var(--white);
+    border-bottom: 4px solid var(--white);
     transition: var(--transition);
 }
+
+/*BODY*/
 
 body {
     margin: 0;
@@ -92,6 +90,10 @@ button:hover {
     cursor: pointer;
     opacity: 0.8;
 }
+
+
+/*FOOTER*/
+
 footer{
     font-size: 0.8em;
     background-color: var(--black);
@@ -106,3 +108,10 @@ footer{
 #contact {
 	vertical-align: center;
 }
+
+/*MEDIA QUERIES*/
+@media (prefers-reduced-motion: no-preference) {
+    * {
+      scroll-behavior: smooth;
+    }
+  }
